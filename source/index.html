@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Кэт энерджи">
+          <img class="page-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
-        <div class="main-nav__item">
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Кэт энерджи">
-            <img class="main-nav__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
@@ -79,17 +79,17 @@
           </div>
         </div>
         <b class="live-example__results-money">Затраты на питание: 15 000 руб.</b>
-        <section class="live-example__slider">
+        <section class="live-example__slider slider">
           <h3 class="visually-hidden">Было/стало</h3>
-          <img class="live-example__slider-image" src="http://placehold.it/311x232" width="311" height="232" alt="Было">
-          <div class="live-example__slider-wrapper">
-            <button class="live-example__slider-item">
+          <img class="slider__image" src="http://placehold.it/311x232" width="311" height="232" alt="Было">
+          <div class="slider__wrapper">
+            <button class="slider__item" type="button">
               Было
             </button>
-            <div class="live-example__slider-scale">
-              <div class="live-example__slider-bar"></div>
+            <div class="slider__scale">
+              <div class="slider__bar"></div>
             </div>
-            <button class="live-example__slider-item">
+            <button class="slider__item" type="button">
               Стало
             </button>
           </div>
