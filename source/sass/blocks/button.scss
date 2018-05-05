@@ -11,12 +11,14 @@
   display: block;
   text-align: center;
   border: none;
+
   &--small-text {
     font-size: 14px;
     line-height: 18px;
     padding-top: 11px;
     padding-bottom: 11px;
   }
+
   &--white {
     background-color: $background-color-mid;
     color: $text-color-mid;

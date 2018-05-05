@@ -1,6 +1,7 @@
 .form__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
   &--border {
     border: 1px solid #ededed;
     padding-top: 21px;
@@ -55,12 +56,15 @@
   font-size: 24px;
   line-height: 24px;
   color: $text-color-dark;
+
   &--contact::after {
     @include green-line(99px);
   }
+
   &--comment::after {
     @include green-line(158px);
   }
+
   &--more::after {
     @include green-line(136px);
   }

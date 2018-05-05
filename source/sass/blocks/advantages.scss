@@ -17,6 +17,7 @@
   display: block;
   margin-bottom: 20px;
   position: relative;
+
   &::before {
     content: "";
     display: block;
@@ -25,18 +26,22 @@
     height: 60px;
     background-position: center center;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
+
   &--nutrients::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
+
   &--form::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
+
   &--ration::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
+
   &--fast::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
