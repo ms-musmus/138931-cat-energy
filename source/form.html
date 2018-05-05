@@ -31,61 +31,62 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <section class="request">
         <h2 class="visually-hidden">Форма заявки на подбор программы</h2>
-        <p class="request__summary">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="request__summary">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="request__form form" method="post" action="https://echo.htmlacademy.ru">
           <div class="form__wrapper">
-            <label>Имя:<sup>*</sup>
+            <label class="form__label">Имя:<sup>*</sup>
               <input class="form__input-text" type="text" name="name" placeholder="Барсик" required>
             </label>
-            <label>Вес (кг):<sup>*</sup>
+            <label class="form__label">Вес (кг):<sup>*</sup>
               <input class="form__input-text" type="text" name="weight" placeholder="7" required>
             </label>
-            <label>Возраст (лет):
+            <label class="form__label">Возраст (лет):
               <input class="form__input-text" type="text" name="age" placeholder="7">
             </label>
           </div>
-          <div class="form__wrapper">
-            <label>
-              <input class="visually-hidden" type="radio" name="type" value="slim" checked><span class="form__radio-indicator"></span>Похудение
+          <div class="form__wrapper form__wrapper--border">
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="radio" name="type" value="slim" checked><span class="form__radio-indicator"></span>Похудение
             </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="type" value="pro"><span class="form__radio-indicator"></span>Набор массы
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="radio" name="type" value="pro"><span class="form__radio-indicator"></span>Набор массы
             </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="type" value="other"><span class="form__radio-indicator"></span>Набор массы
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="radio" name="type" value="other"><span class="form__radio-indicator"></span>Не знаю (Нужен ваш совет)
             </label>
           </div>
-          <p class="form__title">Контактные данные (владельца кота)</p>
-          <label>E-mail:<sup>*</sup>
-            <input class="form__input-text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label>Телефон:<sup>*</sup>
-            <input class="form__input-text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-          </label>
-          <p class="form__title">Комментарий</p>
-          <label class="visually-hidden">Комментарий
-            <textarea class="form__input-textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
-          <p class="form__title">Дополнительно</p>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="sugar" checked><span class="form__checkbox-indicator"></span>Сахарозаменитель
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="water"><span class="form__checkbox-indicator"></span>Питьевая вода
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="milk"><span class="form__checkbox-indicator"></span>Молоко
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="vitamins"><span class="form__checkbox-indicator"></span>Витамины
-          </label>
-          <button class="button form__button" type="submit">Отправить заявку</button>
-          <small class="form__legend">
-            <sup>*</sup> &mdash; Обязательные поля
-          </small>
+          <div class="form__wrapper">
+            <p class="form__title form__title--contact">Контактные данные (владельца кота)</p>
+            <label class="form__label">E-mail:<sup>*</sup>
+              <input class="form__input-text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="form__label">Телефон:<sup>*</sup>
+              <input class="form__input-text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            </label>
+            <p class="form__title form__title--comment">Комментарий</p>
+            <label class="visually-hidden" for="comment">Комментарий</label>
+            <textarea class="form__input-textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <p class="form__title form__title--more">Дополнительно</p>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="sugar" checked><span class="form__checkbox-indicator"></span>Сахарозаменитель
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="water"><span class="form__checkbox-indicator"></span>Питьевая вода
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="milk"><span class="form__checkbox-indicator"></span>Молоко
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="vitamins"><span class="form__checkbox-indicator"></span>Витамины
+            </label>
+            <button class="button form__button" type="submit">Отправить заявку</button>
+            <small class="form__legend">
+              <sup>*</sup> &mdash; Обязательные поля
+            </small>
+          </div>
         </form>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--mid-background">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>

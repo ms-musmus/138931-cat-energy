@@ -1,1 +1,19 @@
+.request {
 
+}
+
+.request__summary {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-dark;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.request__form {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}

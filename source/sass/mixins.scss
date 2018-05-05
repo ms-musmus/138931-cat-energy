@@ -3,3 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin green-line ($width, $height: 3px) {
+  content: "";
+  display: block;
+  background-color: $background-color-dark;
+  width: $width;
+  height: $height;
+}
