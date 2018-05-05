@@ -4,11 +4,17 @@
   font-family: $font-family-head;
   font-size: 16px;
   line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 400;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
   &--small-text {
     font-size: 14px;
     line-height: 18px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
   &--white {
     background-color: $background-color-mid;

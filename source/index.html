@@ -37,7 +37,7 @@
         <img class="program__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Кэт энерджи PRO с курицей">
         <a class="button button--small-text program__button" href="form.html">Подобрать программу</a>
       </section>
-      <section class="categories">
+      <section class="categories page-main__categories">
         <h2 class="visually-hidden">Виды питания</h2>
         <section class="categories__item">
           <h3 class="categories__item-title categories__item-title--slim">Похудение</h3>
@@ -50,7 +50,7 @@
           <a class="categories__item-link" href="#">Каталог Pro</a>
         </section>
       </section>
-      <section class="advantages">
+      <section class="advantages page-main__advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--nutrients">
@@ -68,22 +68,24 @@
         </ul>
       </section>
       <section class="live-example">
-        <h2 class="live-example__title">Живой пример</h2>
-        <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="live-example__results-wrapper">
-          <div class="live-example__results-item">
-            <b class="live-example__results-item-value">5 кг</b>
-            <span class="live-example__results-item-description">снижение<br>веса</span>
+        <div class="live-example__wrapper">
+          <h2 class="live-example__title">Живой пример</h2>
+          <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="live-example__results-wrapper">
+            <div class="live-example__results-item">
+              <b class="live-example__results-item-value">5 кг</b>
+              <span class="live-example__results-item-description">снижение<br>веса</span>
+            </div>
+            <div class="live-example__results-item">
+              <b class="live-example__results-item-value">60 дней</b>
+              <span class="live-example__results-item-description">затрачено<br>времени</span>
+            </div>
           </div>
-          <div class="live-example__results-item">
-            <b class="live-example__results-item-value">60 дней</b>
-            <span class="live-example__results-item-description">затрачено<br>времени</span>
-          </div>
+          <b class="live-example__results-money">Затраты на питание: 15 000 руб.</b>
         </div>
-        <b class="live-example__results-money">Затраты на питание: 15 000 руб.</b>
         <section class="live-example__slider slider">
           <h3 class="visually-hidden">Было/стало</h3>
-          <img class="slider__image" src="http://placehold.it/311x232" width="311" height="232" alt="Было">
+          <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Было">
           <div class="slider__wrapper">
             <button class="slider__item" type="button">
               Было
@@ -106,24 +108,24 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2994712062003!2d30.321988957357437!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524089536594" width="320" height="400" allowfullscreen></iframe>
-        <img class="map__image" src="http://placehold.it/320x400" width="320" height="400" alt="Интерактивная карта">
+        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2994712062003!2d30.321988957357437!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524089536594" width="320" height="400" allowfullscreen></iframe>
+        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Интерактивная карта">
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__title">
-        <img class="page-footer__title-logo" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+        <img class="page-footer__title-logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="#"><img class="social__link-image" src="img/icon-vk-mobile.svg" width="22" height="12"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            <a class="social__link social__link--instagram" href="#"><img class="social__link-image" src="img/icon-insta-mobile.svg" width="16" height="16"><span class="visually-hidden">Инстаграм</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="#"><img class="social__link-image" src="img/icon-fb-mobile.svg" width="10" height="19"><span class="visually-hidden">Фейсбук</span></a>
           </li>
         </ul>
       </div>
