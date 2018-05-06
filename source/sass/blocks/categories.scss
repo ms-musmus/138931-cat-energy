@@ -1,0 +1,102 @@
+.categories__item {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 22px;
+  padding-top: 30px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-color: $background-color-mid;
+  margin-bottom: 20px;
+}
+
+.categories__item-title {
+  font-family: $font-family-head;
+  color: $text-color-dark;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+
+  &::before {
+    content: "";
+    background-color: $background-color-dark;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 22px;
+    top: 25px;
+    position: absolute;
+  }
+
+  &--slim::after {
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    width: 35px;
+    height: 49px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    position: absolute;
+    left: 30px;
+    top: 23px;
+  }
+
+  &--pro::after {
+    content: "";
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    position: absolute;
+    left: 13px;
+    top: 35px;
+  }
+}
+
+.categories__item-description {
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  font-family: $font-family-text;
+  color: $text-color-mid;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.categories__item-link {
+  font-family: $font-family-head;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-dark;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    width: 24px;
+    height: 11px;
+    margin-left: 12px;
+    position: absolute;
+    top: 8px;
+    right: -36px;
+  }
+}

@@ -1,0 +1,29 @@
+.item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  border: 1px solid #ededed;
+}
+
+.item__title {
+  padding: 0;
+  margin: 0;
+}
+
+.item__link {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-dark;
+  text-transform: uppercase;
+}
+
+.item__description {
+  font-family: $font-family-text;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-mid;
+}

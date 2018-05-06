@@ -1,0 +1,44 @@
+.program {
+  background-color: $background-color-light;
+  text-align: center;
+}
+
+.program__wrapper {
+  width: 320px;
+  min-height: 305px;
+  padding-top: 29px;
+  box-sizing: border-box;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+  background-position: center top;
+  background-color: $background-color-dark;
+  color: $text-color-light;
+  font-family: $font-family-head;
+}
+
+.program__title {
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program__slogan {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.program__image {
+  margin-top: -140px;
+}
+
+.program__button {
+  margin-top: 3px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,129 @@
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--border {
+    border: 1px solid #ededed;
+    padding-top: 21px;
+    padding-bottom: 22px;
+  }
+}
+
+.form__label {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-form;
+  text-transform: uppercase;
+}
+
+.form__input-text {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-mid;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 14px;
+}
+
+.form__input-textarea {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-mid;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #cdcdcd;
+  width: 280px;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.form__title {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color-dark;
+
+  &--contact::after {
+    @include green-line(99px);
+  }
+
+  &--comment::after {
+    @include green-line(158px);
+  }
+
+  &--more::after {
+    @include green-line(136px);
+  }
+}
+
+.form__radio-indicator {
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.form__indicator:checked + .form__radio-indicator::after {
+  content: "";
+  display: block;
+  background-color: $background-color-dark;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.form__checkbox-indicator {
+  border: 1px solid #cdcdcd;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.form__indicator:checked + .form__checkbox-indicator::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+
+.form__button {
+  margin-top: 35px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.form__legend {
+  font-family: $font-family-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color-mid;
+}

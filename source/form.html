@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Кэт энерджи">
-          <img class="page-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="38" alt="Кэт энерджи">
         </a>
         <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,59 +31,62 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <section class="request">
         <h2 class="visually-hidden">Форма заявки на подбор программы</h2>
-        <p class="request__summary">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="request__summary">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="request__form form" method="post" action="https://echo.htmlacademy.ru">
           <div class="form__wrapper">
-            <label>Имя:<sup>*</sup>
+            <label class="form__label">Имя:<sup>*</sup>
               <input class="form__input-text" type="text" name="name" placeholder="Барсик" required>
             </label>
-            <label>Вес (кг):<sup>*</sup>
+            <label class="form__label">Вес (кг):<sup>*</sup>
               <input class="form__input-text" type="text" name="weight" placeholder="7" required>
             </label>
-            <label>Возраст (лет):
+            <label class="form__label">Возраст (лет):
               <input class="form__input-text" type="text" name="age" placeholder="7">
             </label>
           </div>
-          <div class="form__wrapper">
-            <label>
-              <input class="visually-hidden" type="radio" name="type" value="slim" checked><span class="form__radio-indicator"></span>Похудение
+          <div class="form__wrapper form__wrapper--border">
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="radio" name="type" value="slim" checked><span class="form__radio-indicator"></span>Похудение
             </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="type" value="pro"><span class="form__radio-indicator"></span>Набор массы
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="radio" name="type" value="pro"><span class="form__radio-indicator"></span>Набор массы
             </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="type" value="other"><span class="form__radio-indicator"></span>Набор массы
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="radio" name="type" value="other"><span class="form__radio-indicator"></span>Не знаю (Нужен ваш совет)
             </label>
           </div>
-          <p class="form__title">Контактные данные (владельца кота)</p>
-          <label>E-mail:<sup>*</sup>
-            <input class="form__input-text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label>Телефон:<sup>*</sup>
-            <input class="form__input-text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-          </label>
-          <p class="form__title">Комментарий</p>
-          <textarea class="form__input-textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          <p class="form__title">Дополнительно</p>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="sugar" checked><span class="form__checkbox-indicator"></span>Сахарозаменитель
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="water"><span class="form__checkbox-indicator"></span>Питьевая вода
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="milk"><span class="form__checkbox-indicator"></span>Молоко
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="vitamins"><span class="form__checkbox-indicator"></span>Витамины
-          </label>
-          <button class="button form__button" type="submit">Отправить заявку</button>
-          <small class="form__legend">
-            <sup>*</sup> &mdash; Обязательные поля
-          </small>
+          <div class="form__wrapper">
+            <p class="form__title form__title--contact">Контактные данные (владельца кота)</p>
+            <label class="form__label">E-mail:<sup>*</sup>
+              <input class="form__input-text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="form__label">Телефон:<sup>*</sup>
+              <input class="form__input-text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            </label>
+            <p class="form__title form__title--comment">Комментарий</p>
+            <label class="visually-hidden" for="comment">Комментарий</label>
+            <textarea class="form__input-textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <p class="form__title form__title--more">Дополнительно</p>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="sugar" checked><span class="form__checkbox-indicator"></span>Сахарозаменитель
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="water"><span class="form__checkbox-indicator"></span>Питьевая вода
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="milk"><span class="form__checkbox-indicator"></span>Молоко
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden form__indicator" type="checkbox" name="vitamins"><span class="form__checkbox-indicator"></span>Витамины
+            </label>
+            <button class="button form__button" type="submit">Отправить заявку</button>
+            <small class="form__legend">
+              <sup>*</sup> &mdash; Обязательные поля
+            </small>
+          </div>
         </form>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--mid-background">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
@@ -92,24 +95,24 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2994712062003!2d30.321988957357437!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524089536594" width="320" height="400" allowfullscreen></iframe>
-        <img class="map__image" src="http://placehold.it/320x400" width="320" height="400" alt="Интерактивная карта">
+        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2994712062003!2d30.321988957357437!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524089536594" width="320" height="400" allowfullscreen></iframe>
+        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Интерактивная карта">
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__title">
-        <img class="page-footer__title-logo" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+        <img class="page-footer__title-logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="#"><img class="social__link-image" src="img/icon-vk-mobile.svg" width="22" height="12"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            <a class="social__link social__link--instagram" href="#"><img class="social__link-image" src="img/icon-insta-mobile.svg" width="16" height="16"><span class="visually-hidden">Инстаграм</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="#"><img class="social__link-image" src="img/icon-fb-mobile.svg" width="10" height="19"><span class="visually-hidden">Фейсбук</span></a>
           </li>
         </ul>
       </div>

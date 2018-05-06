@@ -1,0 +1,20 @@
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__item {
+  background-color: $background-color-light;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+.main-nav__link {
+  color: $text-color-dark;
+  font-family: $font-family-head;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
