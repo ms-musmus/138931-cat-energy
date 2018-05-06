@@ -6,7 +6,7 @@
 .program__wrapper {
   width: 320px;
   min-height: 305px;
-  padding-top: 29px;
+  padding-top: 27px;
   box-sizing: border-box;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 .program__title {
   font-weight: 400;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 36px;
   line-height: 36px;
 }
@@ -33,7 +33,12 @@
 }
 
 .program__image {
-  margin-top: -140px;
+  margin-top: -139px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 271px;
+  display: block;
 }
 
 .program__button {
