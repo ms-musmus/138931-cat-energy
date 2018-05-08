@@ -24,3 +24,58 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 440px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    padding-top: 19px;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .main-nav__link {
+    display: block;
+    color: $text-color-form;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 7px;
+
+    &--active {
+      border-bottom: 2px solid $background-color-dark;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 480px;
+  }
+
+  .main-nav__item {
+    background-color: transparent;
+
+    &--active .main-nav__link--white {
+      border-bottom-color: $text-color-light;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    padding-bottom: 8px;
+
+    &--white {
+      color: $text-color-light;
+      background-color: transparent;
+    }
+  }
+}
