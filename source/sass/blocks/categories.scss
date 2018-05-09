@@ -7,12 +7,12 @@
   width: 100%;
   position: relative;
   padding-left: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   padding-top: 29px;
   padding-right: 20px;
   box-sizing: border-box;
   background-color: $background-color-mid;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .categories__item-title {
@@ -104,6 +104,7 @@
     padding-bottom: 61px;
     padding-top: 75px;
     padding-right: 280px;
+    margin-top: 0;
     margin-bottom: 30px;
 
     &:nth-of-type(2) {

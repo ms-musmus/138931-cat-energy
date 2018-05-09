@@ -37,7 +37,7 @@
   }
 
   .main-nav__item {
-    padding-top: 19px;
+    padding-top: 17px;
     padding-bottom: 0;
     border: none;
   }
@@ -48,7 +48,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
 
     &--active {
       border-bottom: 2px solid $background-color-dark;
@@ -63,6 +63,7 @@
 
   .main-nav__item {
     background-color: transparent;
+    padding-bottom: 8px;
 
     &--active .main-nav__link--white {
       border-bottom-color: $text-color-light;
@@ -71,7 +72,7 @@
 
   .main-nav__link {
     font-size: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 
     &--white {
       color: $text-color-light;

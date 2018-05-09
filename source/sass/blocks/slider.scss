@@ -1,3 +1,9 @@
+.slider__wrapper {
+  display: flex;
+  margin-top: 28px;
+  align-items: center;
+}
+
 .slider__item {
   font-family: $font-family-head;
   font-weight: 400;
@@ -5,4 +11,37 @@
   line-height: 20px;
   color: $text-color-dark;
   text-transform: uppercase;
+  background-color: $background-color-mid;
+  border: none;
+  padding: 0;
+
+  &--before {
+    margin-left: 64px;
+  }
+
+  &--after {
+    margin-right: auto;
+  }
+}
+
+.slider__scale {
+  width: 84px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  background-color: $background-color-light;
+  border-radius: 6px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+}
+
+.slider__bar {
+  background-color: $background-color-dark;
+  width: 35px;
+  height: 6px;
+  border-radius: 2px;
 }

@@ -6,7 +6,7 @@
   font-size: 36px;
   line-height: 60px;
   color: $text-color-dark;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .advantages__list {
@@ -64,11 +64,11 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-bottom: 15px;
-    border-bottom: 1px solid #e6e6e6;
   }
 
   .advantages__title {
     font-size: 60px;
+    margin-bottom: 26px;
   }
 
   .advantages__list {
@@ -78,16 +78,20 @@
   .advantages__item {
     display: block;
     width: 245px;
-    margin-top: 45px;
-    margin-bottom: 40px;
-    margin-right: 109px;
+    margin-top: 46px;
+    margin-bottom: 41px;
+    margin-right: 139px;
     position: relative;
     min-height: 230px;
+
+    &:nth-of-type(2n) {
+      margin-right: auto;
+    }
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 35px;
+      margin-bottom: 31px;
     }
 
     &::after {
@@ -96,11 +100,12 @@
       font-weight: 400;
       font-size: 281px;
       line-height: 281px;
+      text-align: right;
       color: $background-color-mid;
       counter-increment: list;
       content: counter(list);
       position: absolute;
-      right: 0;
+      left: 115px;
       top: -40px;
     }
   }

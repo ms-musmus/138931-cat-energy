@@ -1,17 +1,13 @@
 .live-example {
   background-color: $background-color-mid;
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-
-.live-example__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 17px;
+  padding-bottom: 30px;
 }
 
 .live-example__title {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
   font-family: $font-family-head;
   font-weight: 400;
@@ -19,6 +15,11 @@
   font-size: 36px;
   line-height: 60px;
   margin-bottom: 23px;
+}
+
+.live-example__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .live-example__description {
@@ -33,10 +34,22 @@
   margin-bottom: 25px;
 }
 
+.live-example__results-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .live-example__results-item {
+  border-radius: 2px;
   border: 1px solid #cdcdcd;
   width: 124px;
+  box-sizing: border-box;
   text-align: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  position: relative;
+  margin-bottom: 34px;
 }
 
 .live-example__results-item-value {
@@ -54,6 +67,11 @@
   font-size: 12px;
   line-height: 12px;
   color: $text-color-mid;
+  position: absolute;
+  background-color: $background-color-mid;
+  width: 90px;
+  left: 16px;
+  bottom: -16px;
 }
 
 .live-example__results-money {
@@ -63,4 +81,89 @@
   line-height: 20px;
   color: $text-color-dark;
   text-transform: uppercase;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.live-example__slider {
+  margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example {
+    background-color: $background-color-light;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+
+  .live-example__title {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 60px;
+    margin-bottom: 63px;
+  }
+
+  .live-example__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 248px;
+  }
+
+  .live-example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .live-example__results-wrapper {
+    align-items: center;
+  }
+
+  .live-example__results-item {
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    margin-right: 42px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .live-example__results-item-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .live-example__results-item-description {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $background-color-light;
+    position: relative;
+    left: 0;
+    bottom: -11px;
+    width: auto;
+    padding-left: 9px;
+    padding-right: 9px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .live-example__results-money {
+    width: 192px;
+    font-size: 20px;
+    text-align: right;
+    flex-grow: 0;
+    margin-left: auto;
+  }
+
+  .live-example__results-money-text {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
