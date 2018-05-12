@@ -5,6 +5,7 @@
   padding-bottom: 25px;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -38,4 +39,41 @@
 
 .more__button {
   margin-top: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .more {
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-top: 164px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      left: 133px;
+      top: 55px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .more__title {
+    display: block;
+    width: 135px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .more__description {
+    display: block;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 25px auto 0 auto;
+  }
+
+  .more__button {
+    margin-top: auto;
+  }
 }

@@ -47,3 +47,49 @@ additional-item__description-value {
 .additional-item__button {
   margin-top: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-item {
+    border-top: none;
+    box-sizing: border-box;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+    padding-right: 36px;
+  }
+
+  .additional-item__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-item__title {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .additional-item__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-item__description {
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+
+    tr {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  .additional-item__description-value {
+    width: 95px;
+    text-align: right;
+  }
+
+  .additional-item__button {
+    margin-top: 23px;
+  }
+}

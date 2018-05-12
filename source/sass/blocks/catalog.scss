@@ -1,8 +1,24 @@
 .catalog__item {
   border: 1px solid #ededed;
-  border-top: none;
+  border-bottom: none;
 
-  &:first-of-type {
+  &:last-of-type {
     border: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    border: none;
+    width: 324px;
+    margin-top: 140px;
   }
 }

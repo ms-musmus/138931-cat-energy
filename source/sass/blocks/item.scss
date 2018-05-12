@@ -65,3 +65,52 @@
 .item__button {
   flex-grow: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .item {
+    background-color: $background-color-mid;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-top: 164px;
+    display: block;
+    position: relative;
+  }
+
+  .item__image-link {
+    width: 100%;
+    position: absolute;
+    bottom: 305px;
+    left: 0;
+  }
+
+  .item__image {
+    margin: 0 auto;
+  }
+
+  .item__wrapper {
+    width: 100%;
+  }
+
+  .item__link {
+    font-size: 20px;
+    width: 130px;
+    text-align: center;
+    margin: 0 auto 18px auto;
+  }
+
+  .item__description {
+    font-size: 16px;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+      padding-top: 8px;
+      padding-bottom: 7px;
+    }
+  }
+
+  .item__button {
+    margin-top: 33px;
+  }
+}
