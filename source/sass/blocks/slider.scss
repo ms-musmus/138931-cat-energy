@@ -124,6 +124,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider {
+    padding-bottom: 75px;
+  }
+
   .slider__item {
     &--before {
       margin-left: 40px;

@@ -27,3 +27,10 @@
     fill: #666666;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    width: 164px;
+  }
+}

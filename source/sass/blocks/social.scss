@@ -5,11 +5,10 @@
   flex-wrap: wrap;
   margin-left: 73px;
   margin-right: 82px;
+  align-items: center;
 }
 
 .social {
-  margin-left: 20px;
-  margin-right: 20px;
   padding-bottom: 17px;
   padding-top: 22px;
   border-bottom: 1px solid #d9d9d9;
@@ -17,4 +16,34 @@
 
 .social__link-image {
   fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .social {
+    width: 125px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .social__link {
+    &--vkontakte .social__link-image {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram .social__link-image {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook .social__link-image {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
