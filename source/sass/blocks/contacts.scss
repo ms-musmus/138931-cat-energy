@@ -1,12 +1,21 @@
 .contacts {
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 29px;
+  padding-bottom: 26px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: $background-color-light;
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   &--mid-background {
     background-color: $background-color-mid;
   }
+}
+
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .contacts__title {
@@ -16,6 +25,7 @@
   line-height: 20px;
   color: $text-color-dark;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .contacts__address {
@@ -24,4 +34,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  width: 50%;
 }

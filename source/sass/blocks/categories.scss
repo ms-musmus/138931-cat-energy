@@ -162,6 +162,7 @@
 @media (min-width: $desktop-width) {
   .categories {
     justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .categories__item {

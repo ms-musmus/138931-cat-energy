@@ -1,5 +1,13 @@
 .copyright {
-  padding-top: 23px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link-text {
@@ -8,4 +16,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+}
+
+.copyright__link-image {
+  margin-right: -7px; /* костыль */
+
+  path {
+    width: 27px;
+    height: 34px;
+    fill: #666666;
+  }
 }

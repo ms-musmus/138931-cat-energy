@@ -109,13 +109,17 @@
   }
 
   .program__text-wrapper {
+    width: 650px;
     padding-top: 222px;
-    margin-left: 190px;
+    padding-left: 120px;
+    box-sizing: border-box;
+    margin-left: auto;
   }
 
   .program__button {
     margin-top: 51px;
-    margin-left: 190px;
+    margin-right: 285px;
+    margin-left: auto;
   }
 
   .program__image-wrapper {
@@ -123,7 +127,7 @@
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;
-    background-position: center top;
+    background-position: right top;
     background-color: $background-color-dark;
   }
 
@@ -131,6 +135,6 @@
     width: 552px;
     height: 499px;
     top: 142px;
-    left: 560px;
+    left: calc(50% - 159px);
   }
 }

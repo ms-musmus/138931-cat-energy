@@ -1,13 +1,15 @@
-.page-footer {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 39px;
-  padding-bottom: 22px;
+.page-footer__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
   background-color: $background-color-mid;
+  padding-bottom: 22px;
 }
 
 .page-footer__title {
-  padding-bottom: 31px;
+  padding-top: 39px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 28px;
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
 }

@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: $tablet-width;
+    min-width: $tablet-width;
   }
 
   .page-main__categories {
@@ -50,19 +50,29 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: $desktop-width;
+    /*width: $desktop-width;*/
+    margin: 0;
+    width: 100%;
+  }
+
+  .page-main__program {
+    min-width: $desktop-width;
   }
 
   .page-main__categories {
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-top: 80px;
+    width: $desktop-width;
+    margin: 80px auto 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .page-main__advantages {
+    width: $desktop-width;
     margin-top: 43px;
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

@@ -1,16 +1,30 @@
 .map {
   position: relative;
+  min-width: $mobile-width;
+  width: 100%;
+}
+
+.map__wrapper {
+  background-image: url("../img/map-pin.png"),
+    url("../img/bg-map-mobile@1x.png");
+  background-size: 60px, $mobile-width;
+  background-position: center 45%, center bottom;
+  background-repeat: no-repeat;
+  height: 362px;
 }
 
 .map__google {
   border: none;
-  position: relative;
-  z-index: 2;
+  width: 100%;
+  min-width: 320px;
+  height: 362px;
+  /*position: relative;*/
+  /*z-index: 2;*/
 }
 
-.map__image {
+/*.map__image {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-}
+}*/
