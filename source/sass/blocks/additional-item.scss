@@ -1,15 +1,17 @@
 .additional-item {
   border-top: 1px solid #cdcdcd;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
 }
 
 .additional-item__title {
-  padding: 0;
   margin: 0;
+  margin-bottom: 14px;
 }
 
 .additional-item__link {
+  display: block;
+  padding: 0;
   font-family: $font-family-head;
   font-weight: 400;
   font-size: 16px;
@@ -24,4 +26,24 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+  padding: 0;
+  border-collapse: collapse;
+  width: 100%;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional-item__description-field {
+  padding: 0;
+}
+
+additional-item__description-value {
+  padding: 0;
+}
+
+.additional-item__button {
+  margin-top: 12px;
 }
