@@ -8,6 +8,10 @@
   }
 }
 
+.form__container {
+  width: 100%;
+}
+
 .form__wrapper {
   width: 100%;
   padding: 0;
@@ -62,6 +66,7 @@
 
   &--email {
     margin-right: 11px;
+    min-width: 50px;
   }
 
   &--phone {
@@ -110,6 +115,8 @@
 }
 
 .form__input-text {
+  max-height: 52px;
+  font: none;
   font-family: $font-family-head;
   font-weight: 400;
   font-size: 16px;
@@ -359,7 +366,8 @@
     }
 
     &--email {
-      margin-right: 20px;
+      margin-right: 21px;
+      min-width: 63px;
     }
 
     &--phone {

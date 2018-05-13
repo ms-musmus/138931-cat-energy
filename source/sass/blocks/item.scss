@@ -55,11 +55,15 @@
 }
 
 .item__description-field {
+  width: 70px;
   padding: 0;
+  text-align: left;
 }
 
 .item__description-value {
+  width: 69px;
   padding: 0;
+  text-align: right;
 }
 
 .item__button {
@@ -110,6 +114,14 @@
     }
   }
 
+  .item__description-field {
+    width: 125px;
+  }
+
+  .item__description-value {
+    width: 124px;
+  }
+
   .item__button {
     margin-top: 33px;
   }
@@ -118,5 +130,13 @@
 @media (min-width: $desktop-width) {
   .item {
     padding-right: 38px;
+  }
+
+  .item__description-field {
+    width: 85px;
+  }
+
+  .item__description-value {
+    width: 84px;
   }
 }

@@ -37,14 +37,18 @@
 
 .additional-item__description-field {
   padding: 0;
+  width: 140px;
+  text-align: left;
 }
 
 .additional-item__description-value {
   padding: 0;
+  width: 140px;
+  text-align: right;
 }
 
 .additional-item__button {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,9 +84,13 @@
     }
   }
 
+  .additional-item__description-field {
+    width: auto;
+    text-align: right;
+  }
+
   .additional-item__description-value {
     width: 95px;
-    text-align: right;
   }
 
   .additional-item__button {
@@ -97,6 +105,10 @@
     padding-top: 15px;
     padding-bottom: 16px;
     align-items: center;
+
+    &:nth-of-type(2) .additional-item__description-value {
+      padding-right: 9px;
+    }
   }
 
   .additional-item__title {
@@ -108,15 +120,28 @@
     width: 287px;
     margin-right: auto;
 
+    tbody {
+      width: 100%;
+    }
+
     tr {
-      padding-top: 4px;
+      display: flex;
       justify-content: space-between;
+      padding-top: 4px;
+      width: 100%;
     }
   }
 
-  .additional-item__description-value {
-    width: 44px;
+  .additional-item__description-field {
+    width: 144px;
     text-align: left;
+    box-sizing: border-box;
+  }
+
+  .additional-item__description-value {
+    box-sizing: border-box;
+    width: 143px;
+    text-align: right;
   }
 
   .additional-item__button {
