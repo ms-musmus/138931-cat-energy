@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var run = require("run-sequence");
 
 gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
