@@ -79,6 +79,10 @@
     padding-bottom: 59px;
     padding-left: 35px;
     padding-right: 30px;
+
+    &--mid-background {
+      background-color: $background-color-light;
+    }
   }
 
   .contacts__title {

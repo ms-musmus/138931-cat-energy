@@ -16,6 +16,15 @@
 
 .social__link-image {
   fill: #666666;
+
+  &:hover {
+    fill: $background-color-dark;
+  }
+
+  &:active {
+    fill: $background-color-dark;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

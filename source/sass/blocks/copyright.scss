@@ -8,6 +8,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover .copyright__link-image {
+    fill: $background-color-dark;
+  }
+
+  &:active .copyright__link-image {
+    fill: $background-color-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link-text {
@@ -20,12 +32,7 @@
 
 .copyright__link-image {
   margin-right: -7px; /* костыль */
-
-  path {
-    width: 27px;
-    height: 34px;
-    fill: #666666;
-  }
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {

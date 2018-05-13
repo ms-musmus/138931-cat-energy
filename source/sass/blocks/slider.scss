@@ -20,6 +20,7 @@
   background-color: $background-color-mid;
   border: none;
   padding: 0;
+  cursor: pointer;
 
   &--before {
     margin-left: 64px;
@@ -55,7 +56,7 @@
 @media (min-width: $tablet-width) {
   .slider {
     background-color: $background-color-mid;
-    padding-bottom: 73px;
+    padding-bottom: 68px;
   }
 
   .slider__image {
@@ -80,6 +81,16 @@
 
   .slider__item {
     font-size: 20px;
+    border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
+    padding-bottom: 5px;
+
+    &:hover {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
 
     &--before {
       margin-left: 99px;
@@ -95,6 +106,7 @@
     margin-left: 23px;
     margin-right: 21px;
     padding: 0;
+    margin-bottom: 5px;
   }
 
   .slider__bar {
@@ -108,6 +120,16 @@
     margin-left: 198px;
     margin-top: -14px;
     position: relative;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $background-color-dark;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
 
     &::after {
       content: "";
@@ -120,12 +142,17 @@
       left: 12px;
       top: 12px;
     }
+
+    &:active::after {
+      left: 11px;
+      top: 11px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding-bottom: 75px;
+    padding-bottom: 70px;
   }
 
   .slider__item {

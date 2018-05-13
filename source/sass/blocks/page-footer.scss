@@ -12,6 +12,14 @@
   padding-bottom: 28px;
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {

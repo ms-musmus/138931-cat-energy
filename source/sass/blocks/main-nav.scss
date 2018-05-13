@@ -23,6 +23,14 @@
   .main-nav--closed .main-nav__item {
     display: none;
   }
+
+  .main-nav--opened .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,6 +57,14 @@
     font-size: 18px;
     line-height: 25px;
     padding-bottom: 8px;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
 
     &--active {
       border-bottom: 2px solid $background-color-dark;

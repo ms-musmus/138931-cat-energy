@@ -12,6 +12,20 @@
   text-align: center;
   border: none;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--small-text {
     font-size: 14px;
     line-height: 18px;
@@ -22,6 +36,20 @@
   &--white {
     background-color: $background-color-mid;
     color: $text-color-mid;
+  }
+
+  &--white:hover {
+    background-color: #ebebeb;
+  }
+
+  &--white:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--white:disabled {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
   }
 }
 

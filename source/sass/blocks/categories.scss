@@ -96,6 +96,12 @@
     height: 11px;
     margin-left: 12px;
   }
+
+  /* Добавить hover */
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
