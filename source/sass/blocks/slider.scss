@@ -1,4 +1,6 @@
 .slider__image {
+  display: block;
+
   &--after {
     display: none;
   }
@@ -57,20 +59,15 @@
   .slider {
     background-color: $background-color-mid;
     padding-bottom: 68px;
+    padding-top: 352px;
+    position: relative;
   }
 
   .slider__image {
-    width: 100%;
-
-    &--before {
-      margin-top: -151px;
-      height: 500px; /* временно */
-    }
-
-    &--after {
-      margin-top: -169px;
-      height: 517px; /* временно */
-    }
+    width: 690px;
+    position: absolute;
+    bottom: 114px;
+    left: 45px;
   }
 
   .slider__wrapper {
@@ -152,7 +149,13 @@
 
 @media (min-width: $desktop-width) {
   .slider {
+    padding-left: 40px;
     padding-bottom: 70px;
+  }
+
+  .slider__image {
+    bottom: 135px;
+    left: 0;
   }
 
   .slider__item {

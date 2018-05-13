@@ -16,6 +16,10 @@
   background-color: $background-color-dark;
   color: $text-color-light;
   font-family: $font-family-head;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .program__title {
@@ -81,7 +85,6 @@
   .program__image {
     position: absolute;
     width: 708px;
-    height: 609px;  /*Временно */
     z-index: 0;
     top: 259px;
     left: 30px;
@@ -124,11 +127,15 @@
 
   .program__image-wrapper {
     width: 50%;
-    background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;
     background-position: right top;
     background-color: $background-color-dark;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .program__image {
