@@ -10,6 +10,11 @@
   background-position: center 45%, center bottom;
   background-repeat: no-repeat;
   height: 362px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map__google {
@@ -17,16 +22,7 @@
   width: 100%;
   min-width: $mobile-width;
   height: 362px;
-  /*position: relative;*/
-  /*z-index: 2;*/
 }
-
-/*.map__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}*/
 
 @media (min-width: $tablet-width) {
   .map {
@@ -34,9 +30,16 @@
   }
 
   .map__wrapper {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
     background-size: 124px, $tablet-width;
     background-position: center 50%, center bottom;
     height: 396px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-tablet@2x.png");
+    }
   }
 
   .map__google {
@@ -52,9 +55,16 @@
   }
 
   .map__wrapper {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-desktop@1x.png");
     background-size: 124px, 100%;
     background-position: calc(50% + 340px) 51%, center bottom;
     height: 399px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-desktop@2x.png");
+    }
   }
 
   .map__google {
