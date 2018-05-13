@@ -58,9 +58,17 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    /*width: $desktop-width;*/
     margin: 0;
     width: 100%;
+  }
+
+  .page-main__title {
+    width: $desktop-width;
+    margin: 72px auto 23px auto;
+    font-size: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
   }
 
   .page-main__program {

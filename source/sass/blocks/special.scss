@@ -5,6 +5,7 @@
   margin-bottom: 35px;
   min-height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $background-color-dark;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 280px 289px;
@@ -60,6 +61,31 @@
     margin-left: 0;
     margin-right: auto;
     margin-top: 71px;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-size: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: auto;
+    }
+  }
+
+  .special__text {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 19px;
     margin-bottom: auto;
   }
 }

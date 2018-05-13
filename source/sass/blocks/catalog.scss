@@ -22,3 +22,23 @@
     margin-top: 140px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .catalog__item {
+    width: 245px;
+    margin-top: 142px;
+    margin-right: 80px;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+}

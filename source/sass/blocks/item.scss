@@ -114,3 +114,9 @@
     margin-top: 33px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item {
+    padding-right: 38px;
+  }
+}
