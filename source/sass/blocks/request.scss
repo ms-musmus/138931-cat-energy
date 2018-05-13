@@ -19,3 +19,39 @@
   margin-top: 38px;
   margin-bottom: 32px;
 }
+
+@media (min-width: $tablet-width) {
+  .request {
+    margin-top: 54px;
+  }
+
+  .request__summary {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 70px;
+    width: 344px;
+  }
+
+  .request__form {
+    margin-top: 65px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    margin-top: 55px;
+  }
+
+  .request__summary {
+    padding-left: 40px;
+    padding-right: 895px;
+    width: $desktop-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .request__form {
+    margin-bottom: 82px;
+  }
+}
