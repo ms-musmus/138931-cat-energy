@@ -3,7 +3,13 @@ a {
 }
 
 body {
+  min-width: 320px;
+  margin: 0;
   padding: 0;
-  width: 320px;
-  margin: 0 auto;
+  background-color: $background-color-light;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

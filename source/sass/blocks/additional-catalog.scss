@@ -1,25 +1,114 @@
+.additional-catalog {
+  position: relative;
+
+  &::before {
+    @include green-line;
+    position: absolute;
+    top: 42px;
+  }
+}
+
 .additional-catalog__title {
+  position: relative;
   margin: 0;
+  display: inline-block;
   font-family: $font-family-head;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $text-color-dark;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  &::after {
-    @include green-line(53px);
-  }
+  padding-right: 22px;
+  padding-top: 28px;
+  padding-bottom: 34px;
+  background-color: $background-color-light;
 }
 
 .additional-catalog__item {
   margin-left: 20px;
   margin-right: 20px;
+  border-bottom: 1px solid #cdcdcd;
 
-  &:last-child {
+  &:first-of-type {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog {
+    &::before {
+      top: 89px;
+    }
+  }
+
+  .additional-catalog__title {
+    margin-top: 39px;
+    margin-left: 29px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 38px;
+    padding-right: 36px;
+    margin-bottom: 46px;
+  }
+
+  .additional-catalog__item {
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    border-top: none;
+
+    &:first-of-type {
+      border-top: 1px solid rgba(205, 205, 205, 0.5);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog {
+    margin-bottom: 85px;
+
+    &::before {
+      top: 98px;
+    }
+  }
+
+  .additional-catalog__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-catalog__title {
+    margin-left: 0;
+    padding-left: 40px;
+    padding-right: 35px;
+    margin-top: 48px;
+    margin-bottom: 46px;
+  }
+
+  .additional-catalog__item-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 975px;
+    box-sizing: border-box;
+  }
+
+  .additional-catalog__item {
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
     border-bottom: 1px solid #cdcdcd;
+
+    &:first-of-type {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
+
+  .additional-catalog__special {
+    width: 245px;
+    margin-right: 40px;
+    margin-left: auto;
   }
 }

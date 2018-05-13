@@ -6,17 +6,21 @@
   font-size: 36px;
   line-height: 60px;
   color: $text-color-dark;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .advantages__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantages__item {
-  display: block;
+  display: flex;
+  flex-wrap: no-wrap;
   margin-bottom: 20px;
-  position: relative;
+  align-items: center;
 
   &::before {
     content: "";
@@ -25,9 +29,9 @@
     width: 60px;
     height: 60px;
     background-position: center center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    flex-shrink: 0;
   }
 
   &--nutrients::before {
@@ -55,6 +59,77 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-color-mid;
-  margin-left: 80px;
-  padding-top: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-bottom: 15px;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    margin-bottom: 26px;
+  }
+
+  .advantages__list {
+    counter-reset: list 0;
+  }
+
+  .advantages__item {
+    display: block;
+    width: 245px;
+    margin-top: 46px;
+    margin-bottom: 41px;
+    margin-right: 139px;
+    position: relative;
+    min-height: 230px;
+
+    &:nth-of-type(2n) {
+      margin-right: auto;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &::after {
+      display: block;
+      font-family: $font-family-head;
+      font-weight: 400;
+      font-size: 281px;
+      line-height: 281px;
+      text-align: right;
+      color: $background-color-mid;
+      counter-increment: list;
+      content: counter(list);
+      position: absolute;
+      left: 115px;
+      top: -40px;
+    }
+  }
+
+  .advantages__item-description {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-bottom: 0;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+
+  .advantages__item {
+    margin-right: 80px;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
 }

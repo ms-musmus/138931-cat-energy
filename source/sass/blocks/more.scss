@@ -1,0 +1,87 @@
+.more {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 25px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 145px;
+    top: 27px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.more__title {
+  font-family: $font-family-head;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-dark;
+  text-transform: uppercase;
+}
+
+.more__description {
+  font-family: $font-family-text;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-mid;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.more__button {
+  margin-top: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .more {
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-top: 164px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      left: 133px;
+      top: 55px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .more__title {
+    display: block;
+    width: 135px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .more__description {
+    display: block;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 25px auto 0 auto;
+  }
+
+  .more__button {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more {
+    &::before {
+      left: 93px;
+    }
+  }
+}

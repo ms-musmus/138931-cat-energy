@@ -1,12 +1,13 @@
 .program {
   background-color: $background-color-light;
   text-align: center;
+  position: relative;
 }
 
-.program__wrapper {
+.program__text-wrapper {
   width: 320px;
   min-height: 305px;
-  padding-top: 29px;
+  padding-top: 27px;
   box-sizing: border-box;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@
 .program__title {
   font-weight: 400;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 36px;
   line-height: 36px;
 }
@@ -33,12 +34,107 @@
 }
 
 .program__image {
-  margin-top: -140px;
+  position: absolute;
+  top: 167px;
+  left: 20px;
+  display: block;
+  width: 280px;
 }
 
 .program__button {
-  margin-top: 3px;
-  margin-bottom: 22px;
+  margin-top: 135px;
+  margin-bottom: 2px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    position: relative;
+    min-height: 868px;
+  }
+
+  .program__text-wrapper {
+    background-image: none;
+    background-color: $background-color-light;
+    margin-left: 88px;
+    padding-top: 58px;
+    width: 427px;
+    color: $text-color-dark;
+    min-height: 0;
+  }
+
+  .program__title {
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program__image {
+    position: absolute;
+    width: 708px;
+    height: 609px;  /*Временно */
+    z-index: 0;
+    top: 259px;
+    left: 30px;
+  }
+
+  .program__button {
+    position: relative;
+    margin-top: 48px;
+    margin-left: 88px;
+    z-index: 1;
+    width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    min-height: 696px;
+  }
+
+  .program__wrapper {
+    width: 50%;
+  }
+
+  .program__text-wrapper {
+    width: 650px;
+    padding-top: 222px;
+    padding-left: 120px;
+    box-sizing: border-box;
+    margin-left: auto;
+  }
+
+  .program__button {
+    margin-top: 51px;
+    margin-right: 285px;
+    margin-left: auto;
+  }
+
+  .program__image-wrapper {
+    width: 50%;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+    background-position: right top;
+    background-color: $background-color-dark;
+  }
+
+  .program__image {
+    width: 552px;
+    height: 499px;
+    top: 142px;
+    left: calc(50% - 159px);
+  }
 }
