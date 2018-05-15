@@ -89,10 +89,6 @@
     margin-bottom: 13px;
   }
 
-  &--radio:hover .form__radio-indicator {
-    border: 1px solid #bababa;
-  }
-
   &--radio:disabled {
     opacity: 0.3;
   }
@@ -101,16 +97,50 @@
     opacity: 0.3;
   }
 
-  &--checkbox:hover .form__checkbox-indicator {
-    border: 1px solid #bababa;
-  }
-
   &--checkbox:disabled {
     opacity: 0.3;
   }
 
   &--checkbox:active {
     opacity: 0.3;
+  }
+}
+
+input[type="radio"].form__indicator {
+  &:hover + .form__radio-indicator {
+    border: 1px solid #bababa;
+  }
+
+  &:focus + .form__radio-indicator {
+    border: 1px solid #bababa;
+    outline: thin dotted;
+  }
+
+  &:disabled + .form__radio-indicator {
+    opacity: 0.3;
+  }
+
+  &:active + .form__radio-indicator {
+    opacity: 0.3;
+  }
+}
+
+input[type="checkbox"].form__indicator {
+  &:disabled + .form__checkbox-indicator {
+    opacity: 0.3;
+  }
+
+  &:active + .form__checkbox-indicator {
+    opacity: 0.3;
+  }
+
+  &:hover + .form__checkbox-indicator {
+    border: 1px solid #bababa;
+  }
+
+  &:focus + .form__checkbox-indicator {
+    border: 1px solid #bababa;
+    outline: thin dotted;
   }
 }
 
@@ -187,6 +217,36 @@
   width: 280px;
   min-height: 150px;
   box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:focus {
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:active {
+    border: 2px solid $text-color-mid;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  &:required {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:invalid {
+    outline: none;
+    border: 2px solid #ff8282;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
 
 .form__title-wrapper {
