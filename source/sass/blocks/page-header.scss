@@ -97,8 +97,9 @@
     padding-top: 54px;
 
     &--absolute {
-      position: relative;
-      margin-bottom: -116px;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 1300px / 2);
       background-color: transparent;
       z-index: 2;
     }
